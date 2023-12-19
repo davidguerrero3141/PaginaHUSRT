@@ -1,0 +1,61 @@
+<?
+ob_start();
+include ("includes/seguridad.php");
+session_start(); 
+include ("datosconfig.php");
+$conn = new mysqli($servername, $username, $password, $dbname);
+if ($conn->connect_error) {
+die("Connection failed: " . $conn->connect_error);
+}
+$nombre = $_POST['nombre'];
+$slug = strtolower($nombre);
+$slug = str_replace(" ", "-", $slug);
+$slug = str_replace("á", "a", $slug);
+$slug = str_replace("é", "e", $slug);
+$slug = str_replace("í", "i", $slug);
+$slug = str_replace("ó", "o", $slug);
+$slug = str_replace("ú", "u", $slug);
+$slug = str_replace("Á", "a", $slug);
+$slug = str_replace("É", "e", $slug);
+$slug = str_replace("Í", "i", $slug);
+$slug = str_replace("Ó", "o", $slug);
+$slug = str_replace("Ú", "u", $slug);
+$slug = str_replace("Ñ", "n", $slug);
+$slug = str_replace("ñ", "n", $slug);
+$tiponegocio = $_POST['tiponegocio'];
+$tipo = $_POST['tipo'];
+$ciudad = $_POST["ciudad"];
+$slugciudad = strtolower($ciudad);
+$slugciudad = str_replace(" ", "-", $slugciudad);
+$slugciudad = str_replace("á", "a", $slugciudad);
+$slugciudad = str_replace("é", "e", $slugciudad);
+$slugciudad = str_replace("í", "i", $slugciudad);
+$slugciudad = str_replace("ó", "o", $slugciudad);
+$slugciudad = str_replace("ú", "u", $slugciudad);
+$slugciudad = str_replace("Á", "a", $slugciudad);
+$slugciudad = str_replace("É", "e", $slugciudad);
+$slugciudad = str_replace("Í", "i", $slugciudad);
+$slugciudad = str_replace("Ó", "o", $slugciudad);
+$slugciudad = str_replace("Ú", "u", $slugciudad);
+$slugciudad = str_replace("Ñ", "n", $slugciudad);
+$slugciudad = str_replace("ñ", "n", $slugciudad);
+$area = $_POST["area"];
+$precio = $_POST["precio"];
+$habitaciones = $_POST["habitaciones"];
+$banos = $_POST["banos"];
+$parqueaderos = $_POST["parqueaderos"];
+$plano = $_POST["plano"];
+$video = $_POST["video"];
+$mapa = $_POST["mapa"];
+$imagen = $_POST["imagen"];
+$galeria = $_POST["galeria"];
+$descripcion = $_POST["descripcion"];
+$sustituye = array("\r\n", "\n\r", "\n", "\r");
+$descripcion = str_replace($sustituye, "", $descripcion);
+$query = "insert into directorio (`nombre`,`slug`,`tiponegocio`,`tipo`,`ciudad`,`slugciudad`,`area`,`precio`,`habitaciones`,`banos`,`parqueaderos`,`plano`,`video`,`galeria`,`descripcion`,`mapa`,`imagen`) values 
+('$nombre','$slug','$tiponegocio','$tipo','$ciudad','$slugciudad','$area','$precio','$habitaciones','$banos','$parqueaderos','$plano','$video','$galeria','$descripcion','$mapa','$imagen')";
+$result = $conn->query($query); 
+$resultado = "exito";
+header ("Location: directorio.php?tipo=$tipo&resultado=$resultado");
+ob_end_flush();
+?>

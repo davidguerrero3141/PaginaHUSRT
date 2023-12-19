@@ -1,0 +1,48 @@
+<div class="notification-box mb-50">
+  <p><strong>REALTOR MANAGERS / REMAN</strong><strong><em>, </em></strong>es una firma conformada por un equipo de profesionales en bienes ra&iacute;ces donde todos y cada uno de sus integrantes nos encontramos comprometidos con los sue&ntilde;os de nuestros clientes y sus proyectos de vivienda. Es por esto que, seguimos fielmente nuestros principios y filosof&iacute;a en cada uno de los procesos que realizamos para ofrecer siempre la mejor oportunidad de encontrar lo que necesitan y apoyarlos fielmente hasta el cierre de cada uno de sus proyectos&rdquo;</p>
+</div>
+<div id="faq" class="faq-accordion">
+  <div class="card m-b-0">
+    <div class="card-header"> <a class="card-title collapsed" data-toggle="collapse" data-parent="#faq" href="#collapse7"> Misi&oacute;n - Visi&oacute;n </a> </div>
+    <div id="collapse7" class="card-block collapse">
+      <div class="foq-info">
+        <p>&ldquo;Nuestra <strong><em>VISI&Oacute;N</em></strong><strong><em>, </em></strong>es ser la firma con el mayor respaldo en el mercado de bienes ra&iacute;ces y con el mejor crecimiento y posicionamiento a nivel nacional e internacional, logrando un alto nivel de reconocimiento, efectividad y un servicio integral de calidad.&rdquo;</p>
+        <p>Nuestra <strong><em>MISION </em></strong>consiste en alcanzar las expectativas de nuestros clientes, ofreciendo toda nuestra experiencia profesional y coloc&aacute;ndola a su servicio en sus proyectos y sue&ntilde;os en bienes ra&iacute;ces con una administraci&oacute;n profesional, responsable y honesta, un servicio de calidad y alto compromiso en el aspecto transaccional (ventas, arriendos y aval&uacute;os de inmuebles) como en la estructuraci&oacute;n de proyectos inmobiliarios.</p>
+      </div>
+    </div>
+    <div class="card-header"> <a class="card-title collapsed" data-toggle="collapse" data-parent="#faq" href="#collapse8"> Valores </a> </div>
+    <div id="collapse8" class="card-block collapse">
+      <div class="foq-info">
+        <p>Honestidad</p>
+        <p>Responsabilidad</p>
+        <p>Compromiso</p>
+        <p>Puntualidad</p>
+        <p>Respeto</p>
+        <p>Transparencia</p>
+        <p>Cumplimiento</p>
+      </div>
+    </div>
+    <div class="card-header"> <a class="card-title collapsed" data-toggle="collapse" data-parent="#faq" href="#collapse10"> Servicios </a> </div>
+    <div id="collapse10" class="card-block collapse">
+      <div class="foq-info">
+        <p><strong>VENTAS:</strong> Realizamos la adecuada gesti&oacute;n comercial para ofrecer los inmuebles consignados a nuestra firma tanto a nivel nacional como internacional y brindamos el acompa&ntilde;amiento id&oacute;neo en todo el proceso de negociaci&oacute;n hasta llegar al cierre final con la formalizaci&oacute;n correspondiente tanto para quien vende como para quien compra.&nbsp;&nbsp;</p>
+        <p><strong>ARRIENDOS:</strong> Recibimos tanto por parte de los propietarios las propiedades en consignaci&oacute;n y administraci&oacute;n como los requerimientos por parte de los interesados en tomarlas en arriendo. Contamos con las firmas aseguradoras de mayor experiencia en el mercado que nos acompa&ntilde;an en el estudio y formalizaci&oacute;n de contratos.&nbsp;</p>
+        <p><strong>AVALUOS DE INMUEBLES:</strong> <strong>&nbsp;</strong>Ofrecemos el estudio id&oacute;neo para la realizaci&oacute;n de aval&uacute;os de inmuebles en zonas urbanas y rurales de todo el territorio nacional.&nbsp;</p>
+        <p><strong>ESTRUCTURACI&Oacute;N DE PROYECTOS: </strong>Tomamos en consignaci&oacute;n bienes ra&iacute;ces (conjuntos residenciales, edificios, casas, bodegas y terrenos tanto urbanos como rurales) para la elaboraci&oacute;n del estudio correspondiente que brind&eacute; la informaci&oacute;n asertiva legal y t&eacute;cnica con el objetivo de presentar a constructoras e inversionistas desarrolladores de proyectos inmobiliarios.&nbsp;</p>
+        <hr>
+      </div>
+    </div>
+    <div class="card-header mb-0 border-0"> <a class="card-title collapsed" data-toggle="collapse" data-parent="#faq" href="#collapse9"> Campo de acci&oacute;n </a> </div>
+    <div id="collapse9" class="card-block collapse">
+      <div class="foq-info pb-0">
+        <p>- Inclusi&oacute;n de sus inmuebles en nuestra base de datos.</p>
+        <p>- Publicaci&oacute;n de los bienes inmuebles consignados a REALTOR MANAGERS en medios id&oacute;neos, reconocidos y estrat&eacute;gicos para lograr un mayor alcance y posibilidades de negocio.</p>
+        <p>- Log&iacute;stica operativa de presentaci&oacute;n y visitas a los inmuebles con posibles compradores y arrendatarios.</p>
+        <p>- Acompa&ntilde;amiento permanente durante las fases de consignaci&oacute;n, asesor&iacute;a, negociaci&oacute;n, venta y arriendo.</p>
+        <p>- Presentaci&oacute;n de los bienes inmuebles consignados en comit&eacute;s con inversionistas y constructoras.</p>
+        <p>- Socializaci&oacute;n con aliados en bienes ra&iacute;ces con el fin de facilitar mayores posibilidades de negocios.&nbsp;</p>
+        <hr>
+      </div>
+    </div>
+  </div>
+</div>

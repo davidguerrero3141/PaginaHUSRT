@@ -1,0 +1,52 @@
+<?
+ob_start();
+include ("includes/seguridad.php");
+session_start(); 
+include ("datosconfig.php");
+$conn = new mysqli($servername, $username, $password, $dbname);
+if ($conn->connect_error) {
+die("Connection failed: " . $conn->connect_error);
+}
+$var = $_POST['id'];
+$nombre = $_POST['nombre'];
+$area = $_POST["area"];
+$precio = $_POST["precio"];
+$habitaciones = $_POST["habitaciones"];
+$banos = $_POST["banos"];
+$parqueaderos = $_POST["parqueaderos"];
+$plano = $_POST["plano"];
+$video = $_POST["video"];
+$mapa = $_POST["mapa"];
+$imagen = $_POST["imagen"];
+$galeria = $_POST["galeria"];
+$descripcion = $_POST["descripcion"];
+$sustituye = array("\r\n", "\n\r", "\n", "\r");
+$descripcion = str_replace($sustituye, "", $descripcion);
+$sSQL="Update directorio Set nombre='".$nombre."' Where id='" . $var . "'";
+$result = $conn->query($sSQL);
+$sSQL="Update directorio Set area='".$area."' Where id='" . $var . "'";
+$result = $conn->query($sSQL);
+$sSQL="Update directorio Set precio='".$precio."' Where id='" . $var . "'";
+$result = $conn->query($sSQL);
+$sSQL="Update directorio Set habitaciones='".$habitaciones."' Where id='" . $var . "'";
+$result = $conn->query($sSQL);
+$sSQL="Update directorio Set banos='".$banos."' Where id='" . $var . "'";
+$result = $conn->query($sSQL);
+$sSQL="Update directorio Set parqueaderos='".$parqueaderos."' Where id='" . $var . "'";
+$result = $conn->query($sSQL);
+$sSQL="Update directorio Set plano='".$plano."' Where id='" . $var . "'";
+$result = $conn->query($sSQL);
+$sSQL="Update directorio Set video='".$video."' Where id='" . $var . "'";
+$result = $conn->query($sSQL);
+$sSQL="Update directorio Set mapa='".$mapa."' Where id='" . $var . "'";
+$result = $conn->query($sSQL);
+$sSQL="Update directorio Set imagen='".$imagen."' Where id='" . $var . "'";
+$result = $conn->query($sSQL);
+$sSQL="Update directorio Set galeria='".$galeria."' Where id='" . $var . "'";
+$result = $conn->query($sSQL);
+$sSQL="Update directorio Set descripcion='".$descripcion."' Where id='" . $var . "'";
+$result = $conn->query($sSQL);
+$resultado = "exito";
+header ("Location: actualizar_dir.php?id=$var&resultado=$resultado");
+ob_end_flush();
+?>
